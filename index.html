@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishndarshan Yaligar | Full Stack Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <nav class="topbar">
+        <div class="brand">Krishndarshan Yaligar</div>
+        <div class="toplinks">
+          <a href="#dashboard">Dashboard</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">BCA Student | Full Stack Developer | AI Builder</p>
+          <h1>Building software that feels engineered, not just styled.</h1>
+          <p class="hero-text">
+            I design portfolio-grade products with real backend behavior, structured data,
+            API-driven interfaces, and machine-learning-focused problem solving.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore Projects</a>
+            <a class="button secondary" href="#contact">Start a Conversation</a>
+          </div>
+
+          <div class="hero-meta">
+            <span>krishndarshany@gmail.com</span>
+            <span>+91 8861597403</span>
+            <span>Bengaluru, India</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-label">Live Product View</div>
+          <div id="statsGrid" class="metric-list">
+            <div class="metric placeholder">
+              <strong>...</strong>
+              <span>Loading dashboard</span>
+            </div>
+          </div>
+          <p class="panel-text">
+            This portfolio is now shaped like a real application: backend routes,
+            stateful UI, live metrics, and stored contact submissions.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="dashboard">
+      <div class="section-inner dashboard-layout">
+        <div class="dashboard-main">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Full Stack Overview</p>
+              <h2>A portfolio that exposes its backend value in the UI.</h2>
+            </div>
+            <span class="section-note">Live data from Express API</span>
+          </div>
+
+          <div class="system-grid">
+            <article class="system-card">
+              <p class="card-kicker">Application Layer</p>
+              <h3>API-backed frontend</h3>
+              <p id="systemBackend">Loading backend details...</p>
+            </article>
+            <article class="system-card">
+              <p class="card-kicker">Data Layer</p>
+              <h3>Project and contact data</h3>
+              <p id="systemDatabase">Loading database details...</p>
+            </article>
+            <article class="system-card">
+              <p class="card-kicker">Contact Flow</p>
+              <h3>Submission handling</h3>
+              <p id="systemContact">Loading contact flow details...</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="activity-panel">
+          <div class="section-kicker">Recent Activity</div>
+          <div id="activityFeed" class="activity-feed">
+            <div class="activity-item">
+              <strong>Loading activity...</strong>
+              <p>Preparing system events.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner about-grid">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>Technology-driven and project-focused.</h2>
+          <p class="section-text">
+            Building a strong foundation in programming, data analytics, machine
+            learning, and full stack application development. I enjoy turning ideas
+            into working products with clean interfaces and reliable backend logic.
+          </p>
+        </div>
+
+        <div class="focus-list">
+          <article>
+            <h3>Full Stack Web</h3>
+            <p>Interactive frontends, API-driven applications, and responsive UI work.</p>
+          </article>
+          <article>
+            <h3>AI Projects</h3>
+            <p>Computer vision, threat detection, and practical machine learning workflows.</p>
+          </article>
+          <article>
+            <h3>Data Handling</h3>
+            <p>Structured data processing, analytics, and automated logging using Python tools.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Technical Skills</p>
+            <h2>Tools I use across frontend, backend, and AI work.</h2>
+          </div>
+        </div>
+
+        <div id="skillsGrid" class="skills-grid">
+          <article class="skill-block">
+            <h3>Loading skills</h3>
+            <div class="chip-row">
+              <span class="chip">Please wait</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Projects</p>
+            <h2>Selected work that connects software engineering with real use cases.</h2>
+          </div>
+          <span class="section-note">Loaded from backend API</span>
+        </div>
+
+        <div id="projectFilters" class="filter-row"></div>
+        <div id="projectsState" class="state-message">Loading projects...</div>
+        <div id="projectsGrid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-inner two-column">
+        <div>
+          <p class="section-kicker">Education</p>
+          <h2>Academic foundation in computing and problem solving.</h2>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="time">2023 - 2026</span>
+              <h3>Bachelor of Computer Applications</h3>
+              <p>Bangalore University, Bangalore</p>
+            </article>
+            <article class="timeline-item">
+              <span class="time">2021 - 2023</span>
+              <h3>Higher Secondary Certification</h3>
+              <p>SMPU College JSS Dharwad</p>
+            </article>
+            <article class="timeline-item">
+              <span class="time">Schooling</span>
+              <h3>Secondary School Certification</h3>
+              <p>KLE School Savadatti - CBSE</p>
+            </article>
+          </div>
+        </div>
+
+        <div>
+          <p class="section-kicker">Certifications</p>
+          <h2>Learning beyond the classroom.</h2>
+          <div class="cert-list">
+            <article>
+              <h3>AI and Generative AI Basics</h3>
+              <p>Microsoft</p>
+            </article>
+            <article>
+              <h3>AI Literacy</h3>
+              <p>IBM SkillsBuild</p>
+            </article>
+            <article>
+              <h3>MongoDB Basics for Students</h3>
+              <p>Document database fundamentals</p>
+            </article>
+            <article>
+              <h3>MS Power BI</h3>
+              <p>Office Masters</p>
+            </article>
+            <article>
+              <h3>Enterprise Design Thinking</h3>
+              <p>IBM SkillsBuild</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner extras">
+        <div>
+          <p class="section-kicker">Highlights</p>
+          <h2>Interests and extracurricular activity.</h2>
+        </div>
+
+        <div class="highlight-grid">
+          <article>
+            <h3>National Science Day 2025</h3>
+            <p>Presented a project and received a participation certificate for innovation and creativity.</p>
+          </article>
+          <article>
+            <h3>National Science Day 2026</h3>
+            <p>Presented an AI-based cyber threat detection project focused on practical cybersecurity use cases.</p>
+          </article>
+          <article>
+            <h3>Inter-College Basketball</h3>
+            <p>Represented college in competition, building teamwork, discipline, and consistency under pressure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-inner contact-grid">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Let's build something useful.</h2>
+          <p class="section-text">
+            Reach out for internships, project collaboration, or full stack development opportunities.
+          </p>
+          <div class="contact-points">
+            <span>Email: krishndarshany@gmail.com</span>
+            <span>Phone: +91 8861597403</span>
+            <span>Location: Bengaluru, India</span>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <label>
+            <span>Name</span>
+            <input type="text" id="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea id="message" rows="6" placeholder="Tell me about your project or opportunity" required></textarea>
+          </label>
+          <button type="submit" class="button primary submit-button">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
